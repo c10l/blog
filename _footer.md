@@ -1,1 +1,1 @@
-![welcome](/images/welcome-rainbow.gif)
+![welcome](/welcome-rainbow.gif)
