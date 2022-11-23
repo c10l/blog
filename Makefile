@@ -1,5 +1,5 @@
 publish:
-	scp *.md images/* c10l@prose.sh:/
+	scp blog/*.md images/* c10l@prose.sh:/
 .PHONY: publish
 
 ssh:

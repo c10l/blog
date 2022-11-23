@@ -13,4 +13,4 @@ jobs:
           user: c10l
           key: ${{ secrets.PRIVATE_KEY }}
           host: prose.sh
-          src: '*.md images/*'
+          src: 'blog/*.md images/*'
