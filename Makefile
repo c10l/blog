@@ -1,5 +1,5 @@
 publish:
-	scp _styles.css blog/*.md images/* c10l@prose.sh:/
+	scp _header.txt _styles.css blog/*.md images/* c10l@prose.sh:/
 .PHONY: publish
 
 ssh:
