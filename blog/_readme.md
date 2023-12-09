@@ -11,6 +11,4 @@ This is a personal blog.
 
 Any opinions published herein are my own and do not reflect those of my clients, colleagues or friends.
 
-You may disagree with them. That's fine.
-
 Feel free to email me if you'd like to discuss or correct anything in my posts. I will do my best to respond and address any corrections and valid concerns.
