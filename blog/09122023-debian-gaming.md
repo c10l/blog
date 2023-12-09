@@ -183,6 +183,8 @@ To install, follow the [APT Repository instructions](https://xanmod.org/#apt_rep
 
 ## Wrapping up
 
+At this point, make sure you fully update and reboot your system.
+
 By following this post, you should end up with a gaming-ready Debian system.
 
 I have been running this setup for a few months with no major glitches or loss of functionality.
