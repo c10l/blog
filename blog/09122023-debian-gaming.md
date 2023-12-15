@@ -115,6 +115,8 @@ sudo mv *.bin /lib/firmware/amdgpu/
 sudo update-initramfs -c -k all
 ```
 
+💡 There's no harm in pulling these firmware files from upstream. If they're not needed by the driver, they just don't get used.
+
 ## Gaming-related additions
 
 In this section I'll cover some additions with the specific intent of having the best possible gaming experience.
@@ -148,6 +150,10 @@ In order to achieve that, we tell our system to always pull the Mesa packages fr
 You may want to install a newer Kernel version, or an alternative Kernel distribution more focussed on gaming and desktop workloads.
 
 I'll explore some options in this section.
+
+Feel free to install as many kernels as you'd like to test. At boot time, use the GRUB menu to select the one you'd like to use.
+
+If and when you settle on one kernel over the others, just set up GRUB to use that as a default. If you don't know how to do that, [this Stack Exchange answer](https://unix.stackexchange.com/a/694348) has a good break down.
 
 #### Debian `experimental`
 
@@ -192,3 +198,11 @@ I have been running this setup for a few months with no major glitches or loss o
 Since we brought Mesa down from `experimental` into our base system, Steam can be freely installed as a package (as opposed to a Flatpak) and benefit from it. It also ensures games outside of Steam are covered.
 
 Thank you for reading and happy gaming!
+
+---
+
+#### Edit [15/12/2023]
+
+Added a note explaining there's not harm in pulling firmware files from upstream.
+
+Added a little more information on the kernel section, including link to instructions on how to configure the default.
