@@ -170,6 +170,8 @@ At this point you should be able to select the `Virtual Surround Sink` by clicki
 
 [This video](https://www.youtube.com/watch?v=xCbLLge0tOE) is mixed to 7.1 channels and can be used to test the surround. A good test is to alternate between the regular headphones sink and the virtual surround one.
 
+❕ The virtual surround setup should work for any distribution that uses Pipewire. On some distros, the use config file should be on `~/.config/pipewire/pipewire.conf.d` instead of `filter-chain.conf.d` like in Debian.
+
 ### Kernel
 
 You may want to install a newer Kernel version, or an alternative Kernel distribution more focussed on gaming and desktop workloads.

@@ -1,1 +1,5 @@
-layout=aside
+=: layout aside
+=: title c10l's blog
+=: description ramblings and musings
+=> https://xyz.com website
+=> https://twitter.com/xyz twitter
