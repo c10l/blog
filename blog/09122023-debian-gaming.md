@@ -145,6 +145,31 @@ In order to achieve that, we tell our system to always pull the Mesa packages fr
 
 💡 We're pulling both the default `amd64` and `i386` versions of those packages. Some games are 32-bit and require the latter ones.
 
+### Virtual surround sound on headphones
+
+To get virtual surround audio on Pipewire, a new audio sink must be created.
+
+Start by copying the example config file to your `~/.config` directory:
+
+```shell
+mkdir -p ~/.config/pipewire/filter-chain.conf.d/
+cp /usr/share/pipewire/filter-chain/sink-virtual-surround-7.1-hesuvi.conf ~/.config/pipewire/filter-chain.conf.d/
+```
+
+Now grab an impulse response WAV file. I've tested both Atmos and DTS:X and decided on Atmos. Select one from [this list](https://airtable.com/appayGNkn3nSuXkaz/shruimhjdSakUPg2m/tbloLjoZKWJDnLtTc) and download the WAV. I copied the WAV file over to `~/.config/pipewire/filter-chain.conf.d/` where the config file lives.
+
+Edit the file and replace all references to `hrir_hesuvi/hrir.wav` with the full path of your new impulse response WAV (e.g. `/home/gamer/.config/pipewire/filter-chain.conf.d/atmos.wav`).
+
+Restart Pipewire:
+
+```shell
+systemctl --user restart pipewire.service
+```
+
+At this point you should be able to select the `Virtual Surround Sink` by clicking on the speaker icon on the tray. If it's not showing, open the hamburger menu and tick `Show virtual devices`.
+
+[This video](https://www.youtube.com/watch?v=xCbLLge0tOE) is mixed to 7.1 channels and can be used to test the surround. A good test is to alternate between the regular headphones sink and the virtual surround one.
+
 ### Kernel
 
 You may want to install a newer Kernel version, or an alternative Kernel distribution more focussed on gaming and desktop workloads.
@@ -206,3 +231,7 @@ Thank you for reading and happy gaming!
 Added a note explaining there's not harm in pulling firmware files from upstream.
 
 Added a little more information on the kernel section, including link to instructions on how to configure the default.
+
+#### Edit [06/02/2024]
+
+Added a section on virtual surround sound for headphones
