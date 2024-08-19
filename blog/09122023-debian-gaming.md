@@ -174,6 +174,8 @@ At this point you should be able to select the `Virtual Surround Sink` by clicki
 
 ### Kernel
 
+‼️ I had pretty bad jitter on some games (I believe DX12-based ones) as of recent. Using the [Liquorix kernel](#liquorix-kernel) instead of the Debian upstream made the problem go away.
+
 You may want to install a newer Kernel version, or an alternative Kernel distribution more focussed on gaming and desktop workloads.
 
 I'll explore some options in this section.
@@ -237,3 +239,7 @@ Added a little more information on the kernel section, including link to instruc
 #### Edit [06/02/2024]
 
 Added a section on virtual surround sound for headphones
+
+#### Edit [19/08/2024]
+
+Added a note about recent jitter issues and fixing them with the Liquorix kernel.
