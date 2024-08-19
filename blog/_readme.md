@@ -5,6 +5,7 @@ nav:
   - home: https://blog.c10l.cc
   - 'email': mailto:blog@c10l.cc
   - 'source': https://github.com/c10l/blog
+card: summary
 ---
 
 This is a personal blog.

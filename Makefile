@@ -1,9 +1,9 @@
 publish:
-	scp _header.txt _styles.css blog/*.md images/* c10l@prose.sh:/
+	scp blog/* images/* c10l@prose.sh:/
 .PHONY: publish
 
 ssh:
-	ssh c10l@prose.sh
+	ssh c10l@pico.sh
 .PHONY: ssh
 
 imgs:

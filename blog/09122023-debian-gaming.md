@@ -2,6 +2,11 @@
 title: Debian for Gaming
 description: A post describing how to set up a Debian system for gaming
 date: 2023-12-09
+tags: [debian, linux, gaming]
+image: https://www.debian.org/Pics/debian-logo-1024x576.png
+card: summary
+toc: true
+layout: aside
 ---
 
 # Debian for Gaming
@@ -174,7 +179,7 @@ At this point you should be able to select the `Virtual Surround Sink` by clicki
 
 ### Kernel
 
-‼️ I had pretty bad jitter on some games (I believe DX12-based ones) as of recent. Using the [Liquorix kernel](#liquorix-kernel) instead of the Debian upstream made the problem go away.
+‼️ **NOTE**: I had some pretty bad jitter on some games (I believe DX12-based ones) as of recent. Using the [Liquorix kernel](#liquorix-kernel) instead of the Debian upstream made the problem go away.
 
 You may want to install a newer Kernel version, or an alternative Kernel distribution more focussed on gaming and desktop workloads.
 
